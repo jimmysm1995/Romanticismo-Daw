@@ -1,0 +1,71 @@
+/* *********************** */
+/* web de romanticismo */
+/* CSS de autores romanticos*/
+/* Autor: Jose Sanchez Martinez*/
+/* Version 1.0*/
+/* */
+
+/********************* ESTILO GENERAL *************************/
+
+@font-face {
+    font-family: titulos;
+    src: url('./../Fonts/Merriweather/Merriweather-Light.ttf')
+}
+@font-face {
+    font-family:texto;
+    src: url('./../Fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+body {/*background-color: rgba(69, 72, 84, 0.71);*/
+    background-image: url('../images/adobe-stock.jpg');
+    font-family: 'Merriweather', serif;
+    padding: 2%;
+    }
+
+#wrapper {background-color: white;
+    
+    width: 70%;
+    margin:auto;
+    padding: 15px;
+    height: 100vh; /*obligar a que el alto del wrapper sea el alto de la ventana*/
+}
+
+h1,h2,h3{font-family:texto;}
+
+h1{font-size: 3em;
+    text-align: center;
+    border: 2em;
+    padding: 15px;  
+    }
+
+p{text-align: justify;
+    font-family: titulos;
+    text-indent: 1.5em;}
+
+#espronceda { width: 15%;
+        float: right;
+        padding: 15px;
+        opacity: 0.75;
+        }
+
+        #espronceda:hover {opacity: 1;}
+
+        
+.limpiafloat {clear:both;}/*elimina los desagradables efectos secundarios de float*/
+
+.fa {font-size: 30%;}
+
+.fa-facebook{color: blue;}
+        /****************************MEDIA QUEREIS*********************/
+        /*********************tamaño tablet***************************/
+@media only screen and (width<=800px){ /* todas las excepciones para movil */
+    #wrapper {width: 90%;}
+    #espronceda { width: 50%;}
+        /*********************tamaño movil***************************/
+    @media only screen and (width<=500px){ /* todas las excepciones para movil */
+
+        #wrapper {width: 100%;}
+
+        #espronceda {width: 100%;
+                    padding: 15px 0px}
+        }

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: escritura;
+    src: url('../Fonts/Satisfy/Satisfy-Regular.ttf');
+}
+
+    body{font-family: escritura;
+    background-image: url('../images/Backgroundpirata.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    }
+
+    #poema{background-color: antiquewhite;
+            width:25%;
+            text-align: center;
+            margin: auto;
+            margin-left: 15%;/*La medidad de % es siempre relativa al ancho*/
+            margin-top: 3vh;
+            padding: 1%;
+            border-radius: 20px;
+            opacity: 50%;
+            margin-bottom: 5%;
+            /*Se usa vh para la altura*/
+    }
+
+    h1 {color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 20%;
+}
+
+    .fa-anchor {color: rgb(0, 0, 0);}
+        
+    /*********** MEDIA QUEREIS *****************************/
+
+    @media only screen and (width<=900px) {
+        #poema {width: 50%;
+        margin-left: 30%;
+        }
+    }
+
+    @media only screen and (width<=600px) {
+        #poema {
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+    

@@ -1,0 +1,115 @@
+@font-face {
+    font-family: titulos;
+    src: url('./../Fonts/Satisfy/Satisfy-Regular.ttf');
+
+}
+
+* {box-sizing: border-box;} /*Del borde pa dentro to es caja*/
+
+body {font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: burlywood;
+        margin: 0;padding: 0;
+}
+
+#wrapper {background-color: white;
+        width: 80%;
+        margin:auto; 
+        text-align: center;
+        background-color: black,0.5;
+        background-position: center;
+        position: relative;
+}
+
+/***** POSICIONAMIENTO ABSOLUTO Y RELATIVO:
+        - CONTENEDOR WRAPPER: RELATIVA
+        - CONTENEDOR TEXTO: ABSOLUTE
+        - se hace para que si se mueve el wrapper (relativo), se contenedor texto se quede fijo.
+        si se corta una imagen o texto al achicar la imagen, cambiar el padding de lado.
+        se debe usar 2 coordenadas para indicar donde se debe quedar.
+        - si background position estuviera fijada a la izquierda y el texto a la derecha, al contar por la derecha debo poner 
+        las coordenadas top y right, asi mantiene la distancia del texto al margen derecho
+
+*/
+/******************** Hero Section: opcion 1 ******************************/
+
+
+#hero {background-image: url('../images/JEAN_LOUIS_THÉODORE_GÉRICAULT_-_La_Balsa_de_la_Medusa_\(Museo_del_Louvre\,_1818-19\).jpg');/*Coloco foto de fonde*/
+        height: 100vh;  /*Obligar a la imagen a que salga entera*/
+        background-repeat: no-repeat; /*para que no se repita la imagen*/ 
+        background-size: cover; /*Para que cubra el wrapper*/
+        background-position: center; /*Donde esta el elemento principal*/
+        position: relative;
+        
+}  
+
+#titulo {font-family:titulos;
+        font-size: 5rem;
+        text-align: center;
+        color: beige;
+        width: 20%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-color: rgb(58, 54, 54);
+        backdrop-filter: blur(5px); /* para aplicar filtro a un fondo*/
+        border-radius: 60%;
+        opacity: 50%;
+        }
+        
+
+
+/*************************** HERO SECTION: opcion 2; color liso y waves*************************/
+
+#hero2 {background-color: #0099ff; /* mismo color waves */
+        height: 40vh;                   /*alto dimensionado por mi*/
+        position: relative;
+}
+
+#titulo2 {position: absolute;
+        top: 50%;                /*Lo nuevo el titulo a la mitad de alto y ancho*/
+        left: 50%;
+        font-size: 4rem;
+        /*************   necesito mover el texto para que quede enmedio ************/
+        transform: translate(-50%, -50%);
+        font-weight:bold;
+        }
+
+        /************************Version 3 hero section: Con imagen de HEIKEI.APP ***************************/
+
+
+
+         /************************Version 4 hero section: Con video gran formato ***************************/
+#hero4{ text-align: center;}
+
+#titulo4{
+        position: relative;
+                top: -300px;
+                height: 200px;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+} /*habria que cambiar en la media quoris el top de posicionamiento */
+/*  Vamos a poner el titulo SUPERPUESTO sobre el video */
+#myVideo {
+        position: relative; /* Los dos son relative, independientes */
+        right: 0;
+        width: 100%; /*Se adapta al espacio que hay exactamente*/
+        height: 100%;
+        }
+/******************** VH es relativo al ancho de la ventana (usar para alto) 
+y % es el porcentaje de su cuadro ()<usar ancho **********************/
+
+/******************************** MEDIA QUERIS ****************************************/
+
+@media only screen and (width<=900px){
+        #wrapper {width: 90%}
+        #titulo4 {width: 90%;
+                top: 20px;}
+}
+
+@media only screen and (width<=600px){
+        #wrapper {width: 100%}
+        #titulo4 {width: 100%;
+                top: 10px; }
+}
