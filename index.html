@@ -22,13 +22,13 @@
         barra de navegacion
         </nav>
         <!-- Opcion 1: Imagen de fondo + texto ------>
-        <!---
+
             <section id="hero">
             <div id="titulo">
             <p>Romanticismo <br>Literario</p>
         </div>
         </section> 
-        -->
+
     <!--
         <section id="hero2" >
             
@@ -52,34 +52,103 @@
     -->
 
     <!--************************Version 4 hero section ***************************-->
-    <section id="hero4" >
+<!--    <section id="hero4" >
             <video autoplay muted controls loop id="myVideo">
                 <source src="./videos/videoHeroSection.mp4" type="video/mp4">
                     
                 
             </video>
-
+-->
             <!-- Los dos bloques, video y texto son hermanos 
             para montar el titulo sobre el video debo utilizar otra combinacion
             de posicionamiento-->
-        <div id="titulo4">
+        <!--<div id="titulo4">
             <h1>Heading</h1>
                     <p>Lorem ipsum...</p>
-                    <!-- Use a button to pause/play the video with JavaScript -->
+                     Use a button to pause/play the video with JavaScript 
                     <button id="myBtn" onclick="myFunction()">Pause</button>
             <p>Romanticismo <br>Literario</p>
         </div>
         
     </section>
-
+-->
         <section id="intro">
-            Introduccion al romanticismo
+            <div class="titulo-section">
+                introduccion
+            </div>
         </section>
-        <section id=" ideas">
-            Principios del romanticismo
+
+        <!-- MONTAMOS UN GRID DE 2 COLUMNAS TRAS EL TITULO   -->
+
+        <section id="ideas">
+            <div class="titulo-section">
+                Principios del romanticismo
+            </div>
+
+            <!--div.grid2>div.col2*2  es un truco para crear 2 grid de 2 columnas -->
+
+            <div class="grid2">
+
+                <div class="col2">
+                    <img src= "./images/naugrafio-turner.jpg";>
+                </div>
+
+                <div class="col2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="col2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="col2">
+                    <img src="./images/caspar-david-friedrich-049-88fdbe-small.jpg">
+                </div>
+            </div>
         </section>
+
+        <!--Seccion de autores-->
         <section id="autores">
-            autores
+            <!--titulo de seccion-->
+            <div class="titulo-section">
+                Autores
+            </div>
+            <div class="grid4">
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/jose-de-espronceda.jpg" alt="Avatar" >
+                        <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/jose-de-espronceda.jpg" alt="Avatar" >
+                        <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/jose-de-espronceda.jpg" alt="Avatar" >
+                        <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/jose-de-espronceda.jpg" alt="Avatar" >
+                        <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             pie de contenidos
